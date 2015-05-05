@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".hoteles"
+            android:label="@string/title_activity_hoteles" >
+        </activity>
+        <activity
+            android:name=".bares"
+            android:label="@string/title_activity_bares" >
+        </activity>
+        <activity
+            android:name=".aboutus"
+            android:label="@string/title_activity_aboutus" >
+        </activity>
     </application>
 
 </manifest>
