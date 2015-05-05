@@ -40,12 +40,12 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(i);
                 return true;
             case R.id.action_bares:
-                Intent i = new Intent(this,bares.class);
-                startActivity(i);
+                Intent s = new Intent(this,bares.class);
+                startActivity(s);
                 return true;
             case R.id.action_hoteles:
-                Intent i = new Intent(this,hoteles.class);
-                startActivity(i);
+                Intent d = new Intent(this,hoteles.class);
+                startActivity(d);
                 return true;
         }
 

@@ -1,5 +1,6 @@
 package sebastianalarcon.com.turismo_arboletes;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,8 +31,22 @@ public class bares extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch(id)
+        {
+            case R.id.action_settings:
+                return true;
+            case R.id.action_aboutus:
+                Intent i = new Intent(this,aboutus.class);
+                startActivity(i);
+                return true;
+            case R.id.action_main:
+                Intent s = new Intent(this,MainActivity.class);
+                startActivity(s);
+                return true;
+            case R.id.action_hoteles:
+                Intent d = new Intent(this,hoteles.class);
+                startActivity(d);
+                return true;
         }
 
         return super.onOptionsItemSelected(item);

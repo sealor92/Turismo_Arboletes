@@ -7,5 +7,15 @@
     <string name="title_activity_hoteles">Hoteles</string>
     <string name="title_activity_bares">Bares</string>
     <string name="title_activity_aboutus">Acerca de nosotros</string>
+    <string name="main">Principal</string>
     <string name="aboutus">Aplicación para mostrar algunos lugares de Arbolestes. Desarrollada por Sebastián Alarcón Ortega</string>
+    <string-array name="hoteles_array">
+        <item>Hotel Boutique el Mirador</item>
+        <item>Organización Hotelera mi Remanso</item>
+        <item>Finca Hotel el Retiro</item>
+    </string-array>
+
+    <string-array name="bares">
+
+    </string-array>
 </resources>
