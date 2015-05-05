@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Turismo_Arboletes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hoteles">Hotels</string>
+    <string name="title_activity_bares">Bars</string>
+    <string name="title_activity_aboutus">About Us</string>
+    <string name="aboutus">Application for show some Arboletes places. Development by Sebastián Alarcón Ortega</string>
+</resources>
