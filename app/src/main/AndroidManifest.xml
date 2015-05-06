@@ -28,6 +28,14 @@
             android:name=".aboutus"
             android:label="@string/title_activity_aboutus" >
         </activity>
+        <activity
+            android:name=".sitios"
+            android:label="@string/title_activity_sitios" >
+        </activity>
+        <activity
+            android:name=".demografia"
+            android:label="@string/title_activity_demografia" >
+        </activity>
     </application>
 
 </manifest>
