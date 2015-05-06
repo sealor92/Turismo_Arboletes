@@ -47,6 +47,14 @@ public class MainActivity extends ActionBarActivity {
                 Intent d = new Intent(this,hoteles.class);
                 startActivity(d);
                 return true;
+            case R.id.action_sitios:
+                Intent a= new Intent(this, sitios.class);
+                startActivity(a);
+                return true;
+            case R.id.action_demografia:
+                Intent b=new Intent(this, demografia.class);
+                startActivity(b);
+                return true;
         }
 
         return super.onOptionsItemSelected(item);

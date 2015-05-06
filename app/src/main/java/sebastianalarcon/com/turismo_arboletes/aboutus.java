@@ -47,6 +47,12 @@ public class aboutus extends ActionBarActivity {
                 Intent d = new Intent(this,hoteles.class);
                 startActivity(d);
                 return true;
+            case R.id.action_sitios:
+                Intent a= new Intent(this,sitios.class);
+                startActivity(a);
+            case R.id.action_demografia:
+                Intent b=new Intent(this,demografia.class);
+                startActivity(b);
         }
 
         return super.onOptionsItemSelected(item);

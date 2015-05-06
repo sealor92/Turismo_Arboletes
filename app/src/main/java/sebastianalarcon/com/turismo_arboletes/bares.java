@@ -5,6 +5,12 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 
 public class bares extends ActionBarActivity {
@@ -13,6 +19,47 @@ public class bares extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bares);
+
+
+        final TextView tbares =(TextView) findViewById(R.id.tbares);
+        final ImageView ibares = (ImageView) findViewById(R.id.ibares);
+        final Spinner spinner = (Spinner) findViewById(R.id.bares_spinner);
+// Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.bares_array, android.R.layout.simple_spinner_item);
+// Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                switch(position) {
+
+                    case 0:
+                        ibares.setImageResource(R.drawable.bar1);
+                        tbares.setText(R.string.bar1);
+                        break;
+
+                    case 1:
+                        ibares.setImageResource(R.drawable.bar2);
+                        tbares.setText(R.string.bar2);
+                        break;
+
+                    case 2:
+                        ibares.setImageResource(R.drawable.bar3);
+                        tbares.setText(R.string.bar3);
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
 
@@ -46,6 +93,14 @@ public class bares extends ActionBarActivity {
             case R.id.action_hoteles:
                 Intent d = new Intent(this,hoteles.class);
                 startActivity(d);
+                return true;
+            case R.id.action_sitios:
+                Intent a= new Intent(this, sitios.class);
+                startActivity(a);
+                return true;
+            case R.id.action_demografia:
+                Intent b=new Intent(this, demografia.class);
+                startActivity(b);
                 return true;
         }
 

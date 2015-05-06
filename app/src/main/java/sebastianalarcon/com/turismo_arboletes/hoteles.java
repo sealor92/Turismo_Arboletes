@@ -5,6 +5,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -18,9 +20,9 @@ public class hoteles extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoteles);
 
-        TextView thoteles =(TextView) findViewById(R.id.thoteles);
-        ImageView ihoteles = (ImageView) findViewById(R.id.ihoteles);
-        Spinner spinner = (Spinner) findViewById(R.id.hoteles_spinner);
+        final TextView thoteles =(TextView) findViewById(R.id.thoteles);
+        final ImageView ihoteles = (ImageView) findViewById(R.id.ihoteles);
+        final Spinner spinner = (Spinner) findViewById(R.id.hoteles_spinner);
 // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.hoteles_array, android.R.layout.simple_spinner_item);
@@ -29,6 +31,36 @@ public class hoteles extends ActionBarActivity {
 // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String hotel = String.valueOf(spinner.getSelectedItem());
+
+
+                switch(position) {
+
+                    case 0:
+                        ihoteles.setImageResource(R.drawable.hotel1);
+                        thoteles.setText(R.string.hotel1);
+                        break;
+
+                    case 1:
+                        ihoteles.setImageResource(R.drawable.hotel2);
+                        thoteles.setText(R.string.hotel2);
+                        break;
+
+                    case 2:
+                        ihoteles.setImageResource(R.drawable.hotel3);
+                        thoteles.setText(R.string.hotel3);
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
 
@@ -62,6 +94,14 @@ public class hoteles extends ActionBarActivity {
             case R.id.action_main:
                 Intent d = new Intent(this,MainActivity.class);
                 startActivity(d);
+                return true;
+            case R.id.action_sitios:
+                Intent a= new Intent(this, sitios.class);
+                startActivity(a);
+                return true;
+            case R.id.action_demografia:
+                Intent b=new Intent(this, demografia.class);
+                startActivity(b);
                 return true;
         }
 
