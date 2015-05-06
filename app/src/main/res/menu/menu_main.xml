@@ -21,5 +21,15 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
+    <item android:id="@+id/action_demografia"
+        android:title="@string/title_activity_demografia"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_sitios"
+        android:title="@string/title_activity_sitios"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
 
 </menu>

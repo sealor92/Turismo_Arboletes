@@ -1,18 +1,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="sebastianalarcon.com.turismo_arboletes.hoteles">
+    tools:context="sebastianalarcon.com.turismo_arboletes.demografia">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
-
 
     <item android:id="@+id/action_aboutus"
         android:title="@string/title_activity_aboutus"
         android:orderInCategory="100"
         app:showAsAction="never" />
 
-    <item android:id="@+id/action_main"
-        android:title="@string/main"
+    <item android:id="@+id/action_hoteles"
+        android:title="@string/title_activity_hoteles"
         android:orderInCategory="100"
         app:showAsAction="never" />
 
@@ -21,8 +20,8 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
-    <item android:id="@+id/action_demografia"
-        android:title="@string/title_activity_demografia"
+    <item android:id="@+id/action_main"
+        android:title="@string/main"
         android:orderInCategory="100"
         app:showAsAction="never" />
 

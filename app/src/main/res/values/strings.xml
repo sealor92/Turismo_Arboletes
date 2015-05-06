@@ -6,4 +6,6 @@
     <string name="title_activity_hoteles">hoteles</string>
     <string name="title_activity_bares">bares</string>
     <string name="title_activity_aboutus">aboutus</string>
+    <string name="title_activity_sitios">sitios</string>
+    <string name="title_activity_demografia">demografia</string>
 </resources>
