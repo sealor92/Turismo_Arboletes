@@ -8,4 +8,13 @@
     <string name="title_activity_aboutus">aboutus</string>
     <string name="title_activity_sitios">sitios</string>
     <string name="title_activity_demografia">demografia</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="hoteles_array">
+        <item>Hotel Boutique el Mirador</item>
+        <item>Organización Hotelera mi Remanso</item>
+        <item>Finca Hotel el Retiro</item>
+    </string-array>
 </resources>
